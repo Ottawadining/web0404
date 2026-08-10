@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ottawa Best Restaurants | The City's Best, By Category</title>
+<meta name="description" content="Ottawa's best restaurants, ranked by category — fine dining, brunch, patios, Italian, sushi, steakhouse, pizza, and cheap eats. Ten picks in every category.">
+<meta name="keywords" content="best restaurants Ottawa, best restaurants in Ottawa, Ottawa restaurant guide, where to eat in Ottawa, top restaurants Ottawa">
+<link rel="canonical" href="https://www.ottawabestrestaurants.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ottawa Best Restaurants | The City's Best, By Category">
+<meta property="og:description" content="Ottawa's best restaurants, ranked by category — fine dining, brunch, patios, Italian, sushi, steakhouse, pizza, and cheap eats.">
+<meta property="og:url" content="https://www.ottawabestrestaurants.com/">
+<meta property="og:site_name" content="Ottawa Best Restaurants">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ottawa Best Restaurants | The City's Best, By Category">
+<meta name="twitter:description" content="Ottawa's best restaurants, ranked by category — fine dining, brunch, patios, Italian, sushi, steakhouse, pizza, and cheap eats.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ottawa Best Restaurants",
+  "url": "https://www.ottawabestrestaurants.com/",
+  "description": "Ottawa's best restaurants, ranked by category."
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&display=swap');
+
+  :root{
+    --paper:#FAF6EF;
+    --ink:#17140F;
+    --accent:#FF4B2E;
+    --accent-soft:#FFE4DB;
+    --line: rgba(23,20,15,0.12);
+    --mustard:#F5A623;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Archivo', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--paper);
+    border-bottom:3px solid var(--ink);
+  }
+  .header-inner{
+    max-width:1100px; margin:0 auto;
+    padding:18px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{
+    font-family:'Archivo Black', sans-serif;
+    font-size:20px;
+    letter-spacing:-0.02em;
+    text-decoration:none;
+    color:var(--ink);
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo span{
+    background:var(--accent);
+    color:var(--paper);
+    padding:3px 8px;
+    border-radius:6px;
+    font-size:20px;
+  }
+  nav a{
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+    margin-left:24px;
+    opacity:0.6;
+  }
+  nav a:hover{opacity:1;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    max-width:1100px; margin:0 auto;
+    padding:64px 24px 48px;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--ink); color:var(--paper);
+    font-weight:700; font-size:13px;
+    padding:6px 14px; border-radius:100px;
+    margin-bottom:20px;
+  }
+  .eyebrow::before{content:"●"; color:var(--accent); font-size:10px;}
+  h1{
+    font-family:'Archivo Black', sans-serif;
+    font-size:clamp(40px, 7vw, 76px);
+    line-height:0.96;
+    letter-spacing:-0.02em;
+    margin:0 0 18px;
+    max-width:820px;
+  }
+  h1 em{
+    font-style:normal;
+    color:var(--accent);
+  }
+  .hero-sub{
+    max-width:560px;
+    font-size:18px;
+    line-height:1.55;
+    opacity:0.72;
+    margin:0;
+  }
+
+  /* ---------- CATEGORY GRID ---------- */
+  .cat-section{
+    max-width:1100px; margin:0 auto;
+    padding:24px 24px 100px;
+  }
+  .cat-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:18px;
+  }
+  .cat-card{
+    background:#fff;
+    border:2px solid var(--ink);
+    border-radius:18px;
+    padding:28px 24px;
+    text-decoration:none;
+    color:var(--ink);
+    display:flex; flex-direction:column;
+    gap:32px;
+    min-height:170px;
+    position:relative;
+    transition:transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  }
+  .cat-card:hover{
+    transform:translate(-4px,-4px);
+    box-shadow:6px 6px 0 var(--ink);
+    background:var(--accent-soft);
+  }
+  .cat-icon{
+    font-size:30px;
+    line-height:1;
+  }
+  .cat-card h3{
+    font-size:21px;
+    margin:0;
+    font-weight:800;
+    letter-spacing:-0.01em;
+  }
+  .cat-count{
+    font-size:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:var(--accent);
+    margin-top:-24px;
+  }
+
+  /* featured (fine dining) card spans wider */
+  .cat-card.featured{
+    grid-column:span 2;
+    background:var(--ink);
+    color:var(--paper);
+    border-color:var(--ink);
+  }
+  .cat-card.featured .cat-count{color:var(--mustard);}
+  .cat-card.featured:hover{
+    background:#2a241b;
+    box-shadow:6px 6px 0 var(--accent);
+  }
+
+  @media(max-width:860px){
+    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    .cat-card.featured{grid-column:span 2;}
+  }
+  @media(max-width:560px){
+    .cat-grid{grid-template-columns:1fr;}
+    .cat-card.featured{grid-column:span 1;}
+    nav{display:none;}
+  }
+
+  footer{
+    border-top:3px solid var(--ink);
+    padding:32px 24px;
+    text-align:center;
+    font-size:13px;
+    opacity:0.6;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">Ottawa<span>Best</span></a>
+    <nav>
+      <a href="#">Fine Dining</a>
+      <a href="#">Brunch</a>
+      <a href="#">Patios</a>
+      <a href="#">More ▾</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="eyebrow">Ottawa, ranked · 2026</span>
+  <h1>Ottawa's <em>best</em> restaurants, by category</h1>
+  <p class="hero-sub">Ten picks in each — from tasting menus to Friday-night pizza. Pick a category and find your table.</p>
+</section>
+
+<section class="cat-section">
+  <div class="cat-grid">
+
+    <a class="cat-card featured" href="fine-dining.html">
+      <div class="cat-icon">✦</div>
+      <div>
+        <div class="cat-count">10 Restaurants</div>
+        <h3>Best Fine Dining</h3>
+      </div>
+    </a>
+
+    <a class="cat-card" href="brunch.html">
+      <div class="cat-icon">☀</div>
+      <div>
+        <div class="cat-count">10 Restaurants</div>
+        <h3>Best Brunch</h3>
+      </div>
+    </a>
+
+    <a class="cat-card" href="patios.html">
+      <div class="cat-icon">🌿</div>
+      <div>
+        <div class="cat-count">10 Restaurants</div>
+        <h3>Best Patios</h3>
+      </div>
+    </a>
+
+    <a class="cat-card" href="italian.html">
+      <div class="cat-icon">🍝</div>
+      <div>
+        <div class="cat-count">10 Restaurants</div>
+        <h3>Best Italian</h3>
+      </div>
+    </a>
+
+    <a class="cat-card" href="sushi.html">
+      <div class="cat-icon">🍣</div>
+      <div>
+        <div class="cat-count">10 Restaurants</div>
+        <h3>Best Sushi</h3>
+      </div>
+    </a>
+
+    <a class="cat-card" href="steakhouse.html">
+      <div class="cat-icon">🔥</div>
+      <div>
+        <div class="cat-count">10 Restaurants</div>
+        <h3>Best Steakhouse</h3>
+      </div>
+    </a>
+
+    <a class="cat-card" href="pizza.html">
+      <div class="cat-icon">🍕</div>
+      <div>
+        <div class="cat-count">10 Restaurants</div>
+        <h3>Best Pizza</h3>
+      </div>
+    </a>
+
+    <a class="cat-card" href="cheap-eats.html">
+      <div class="cat-icon">$</div>
+      <div>
+        <div class="cat-count">10 Restaurants</div>
+        <h3>Best Cheap Eats</h3>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  Ottawa Best Restaurants — Ottawa's dining scene, ranked by category.
+</footer>
+
+</body>
+</html>
