@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology | Ottawa's Most Awarded Restaurants</title>
+<meta name="description" content="How Ottawa's 10 Most Awarded Restaurants was calculated — eligibility rules, the twenty-year study period, the full scoring system, and how ties are resolved.">
+<link rel="canonical" href="https://www.ottawabestrestaurants.com/ottawa-restaurant-awards/methodology/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How the Ranking Works">
+<meta property="og:description" content="The eligibility rules, scoring system, and tiebreaking procedure behind Ottawa's 10 Most Awarded Restaurants.">
+<meta property="og:url" content="https://www.ottawabestrestaurants.com/ottawa-restaurant-awards/methodology/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How the Ranking Works",
+  "description": "The eligibility rules, scoring system, and tiebreaking procedure behind Ottawa's 10 Most Awarded Restaurants.",
+  "author": { "@type": "Organization", "name": "Ottawa Restaurant Awards" }
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+  :root{
+    --paper:#F7F4EE;
+    --ink:#14120F;
+    --accent:#7A1F1F;
+    --line: rgba(20,18,15,0.14);
+    --muted: rgba(20,18,15,0.62);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+  }
+
+  .masthead{
+    border-bottom:1px solid var(--ink);
+    padding:20px 24px;
+  }
+  .masthead-inner{
+    max-width:720px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:10px;
+  }
+  .masthead-title{
+    font-family:'Newsreader', serif;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+  }
+  .mini-nav a{
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+    text-decoration:none;
+    margin-left:22px;
+  }
+  .mini-nav a:first-child{ margin-left:0; }
+  .mini-nav a.active, .mini-nav a:hover{ color:var(--accent); }
+
+  main{
+    max-width:680px; margin:0 auto;
+    padding:64px 24px 100px;
+  }
+
+  .deck{
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:18px;
+  }
+
+  h1{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:clamp(30px, 5vw, 42px);
+    line-height:1.12;
+    margin:0 0 32px;
+    letter-spacing:-0.01em;
+  }
+
+  h2{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:24px;
+    margin:52px 0 16px;
+    letter-spacing:-0.005em;
+  }
+  h2:first-of-type{ margin-top:0; }
+
+  p{
+    font-size:16px;
+    line-height:1.75;
+    margin:0 0 18px;
+  }
+
+  .example{
+    font-size:15px;
+    font-style:italic;
+    color:var(--muted);
+    border-left:2px solid var(--accent);
+    padding-left:16px;
+    margin:20px 0;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0 28px;
+    font-size:15px;
+  }
+  th, td{
+    text-align:left;
+    padding:8px 6px;
+    border-bottom:1px solid var(--line);
+  }
+  th{
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+  td:last-child, th:last-child{
+    text-align:right;
+    font-variant-numeric:tabular-nums;
+  }
+
+  ul.plain{
+    margin:0 0 20px;
+    padding-left:20px;
+  }
+  ul.plain li{
+    font-size:15.5px;
+    line-height:1.7;
+    margin-bottom:6px;
+    color:var(--muted);
+  }
+
+  .footnote{
+    font-size:13px;
+    color:var(--muted);
+    margin-top:6px;
+  }
+
+  .disclaimer-box{
+    margin:48px 0 0;
+    padding:24px;
+    border:1px solid var(--ink);
+  }
+  .disclaimer-box p{
+    margin:0 0 12px;
+    font-size:15px;
+  }
+  .disclaimer-box p:last-child{ margin-bottom:0; }
+
+  footer{
+    border-top:1px solid var(--ink);
+    padding:40px 24px;
+    text-align:center;
+  }
+  .footer-inner{ max-width:720px; margin:0 auto; }
+  .footer-title{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:14px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .footer-nav a{
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.06em;
+    color:var(--muted);
+    text-decoration:none;
+    margin:0 10px;
+  }
+  .footer-nav a:hover{ color:var(--accent); }
+  .footer-disclaimer{
+    font-size:12px;
+    color:var(--muted);
+    margin-top:18px;
+  }
+
+  @media(max-width:480px){
+    .mini-nav a{ margin-left:14px; font-size:11px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="masthead-inner">
+    <span class="masthead-title">Ottawa Restaurant Awards</span>
+    <nav class="mini-nav">
+      <a href="../">Ranking</a>
+      <a href="./" class="active">Methodology</a>
+      <a href="../achievements/">Achievements</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+
+  <p class="deck">Methodology</p>
+  <h1>How the Ranking Works</h1>
+
+  <p>Ottawa's Most Awarded Restaurants is intended to measure documented culinary achievement rather than personal preference.</p>
+  <p>To create the ranking, we reviewed qualifying recognition received by Ottawa restaurants and chefs during the twenty calendar years from January 1, 2007 through December 31, 2026. Every restaurant is evaluated using the same scoring system.</p>
+
+  <h2>Which Restaurants Are Eligible?</h2>
+  <p>Restaurants must be currently operating in Ottawa at the time of publication to appear in the ranking. Closed restaurants are not eligible for the current Top 10.</p>
+  <p>However, individual chef achievements may remain relevant when the chef is currently leading an eligible Ottawa restaurant. This distinction is important. Restaurant-specific recognition belongs to the restaurant. Individual chef recognition belongs to the chef.</p>
+  <p class="example">For example, if a chef won a culinary competition while operating a restaurant that has since closed, the individual achievement may be credited as part of the chef's record at their current restaurant. Whenever this occurs, the original year and historical context are identified.</p>
+
+  <h2>Why 2007–2026?</h2>
+  <p>The study covers exactly twenty calendar years. Only achievements occurring between January 1, 2007 and December 31, 2026 are eligible for points. Achievements before 2007 may be mentioned as historical context but never contribute points.</p>
+  <p class="example">Beckta received important national recognition before 2007. It is part of the restaurant's history but is excluded from this ranking because it falls outside the study period.</p>
+
+  <h2>Scoring System</h2>
+
+  <table>
+    <tr><th>Canadian Culinary Championship</th><th>Points</th></tr>
+    <tr><td>National Gold</td><td>12</td></tr>
+    <tr><td>National Silver</td><td>8</td></tr>
+    <tr><td>National Bronze</td><td>5</td></tr>
+  </table>
+
+  <table>
+    <tr><th>Gold Medal Plates / Great Kitchen Party (Ottawa)</th><th>Points</th></tr>
+    <tr><td>Ottawa Gold</td><td>5</td></tr>
+    <tr><td>Ottawa Silver</td><td>3</td></tr>
+    <tr><td>Ottawa Bronze</td><td>2</td></tr>
+  </table>
+  <p class="footnote">The regional competition was branded Gold Medal Plates from 2006–2017 and became Canada's Great Kitchen Party in 2018. Both names refer to the same Ottawa qualifying event and are scored identically.</p>
+
+  <table>
+    <tr><th>Canada's 100 Best</th><th>Points</th></tr>
+    <tr><td>#1–25</td><td>6</td></tr>
+    <tr><td>#26–50</td><td>5</td></tr>
+    <tr><td>#51–75</td><td>4</td></tr>
+    <tr><td>#76–100</td><td>3</td></tr>
+  </table>
+
+  <table>
+    <tr><th>Canada's 100 Best — Major Individual / Special Awards</th><th>Points</th></tr>
+    <tr><td>Major award (e.g. Most Innovative Chef, Community Leadership Award, Best Restaurant Bar)</td><td>8</td></tr>
+  </table>
+  <p class="footnote">Only substantive formal awards count. Ordinary editorial mentions do not.</p>
+
+  <table>
+    <tr><th>Air Canada enRoute — Best New Restaurants</th><th>Points</th></tr>
+    <tr><td>Top 10 selection</td><td>7</td></tr>
+  </table>
+
+  <table>
+    <tr><th>Maclean's — National Restaurant Selection</th><th>Points</th></tr>
+    <tr><td>Qualifying national selection</td><td>6</td></tr>
+  </table>
+  <p class="footnote">This includes the national restaurant project by Chris Nuttall-Smith used in this study. Ordinary Maclean's restaurant coverage does not qualify.</p>
+
+  <table>
+    <tr><th>CAA/AAA Four Diamond</th><th>Points</th></tr>
+    <tr><td>Per qualifying year (no cap)</td><td>2</td></tr>
+  </table>
+  <p class="footnote">Only Four Diamond counts; Three Diamond receives zero points. Repeated recognition is intentionally cumulative, because sustained excellence over many years is part of what this study measures.</p>
+
+  <table>
+    <tr><th>Opinionated About Dining</th><th>Points</th></tr>
+    <tr><td>Qualifying annual recognition</td><td>2</td></tr>
+  </table>
+
+  <table>
+    <tr><th>The Best Chef Awards</th><th>Points</th></tr>
+    <tr><td>Qualifying annual recognition</td><td>10</td></tr>
+  </table>
+
+  <table>
+    <tr><th>The World's 50 Best / 50 Best Discovery</th><th>Points</th></tr>
+    <tr><td>50 Best Discovery</td><td>8</td></tr>
+  </table>
+  <p class="footnote">50 Best Discovery is not equivalent to placement on The World's 50 Best Restaurants ranking. It is nevertheless formal international recognition from The World's 50 Best organization and therefore receives points.</p>
+
+  <h2>What We Don't Count</h2>
+  <p>The ranking intentionally excludes many common restaurant accolades:</p>
+  <ul class="plain">
+    <li>Local readers' choice awards</li>
+    <li>Google ratings</li>
+    <li>Yelp</li>
+    <li>TripAdvisor</li>
+    <li>OpenTable awards</li>
+    <li>Paid restaurant awards</li>
+    <li>Wine Spectator restaurant awards</li>
+    <li>Generic media mentions</li>
+    <li>Local "Best Restaurant" articles</li>
+    <li>Social media popularity</li>
+    <li>Public voting competitions</li>
+    <li>Ottawa Chef of the Year</li>
+    <li>Three Diamond CAA/AAA recognition</li>
+    <li>Awards outside 2007–2026</li>
+  </ul>
+  <p>La Liste is also excluded, as no Ottawa restaurant qualified during the study period. The objective is to keep the dataset concentrated on substantial professional, national and international recognition.</p>
+
+  <h2>How Ties Are Resolved</h2>
+  <p>When two or more restaurants receive identical scores, the following procedure applies in order:</p>
+  <p><strong>1. Highest-level culinary achievement.</strong> The restaurant possessing the most significant individual achievement ranks first.</p>
+  <p><strong>2. Number of qualifying achievements.</strong> If restaurants remain tied, the restaurant with more qualifying achievements ranks first.</p>
+  <p><strong>3. Highest Canada's 100 Best placement.</strong> If both restaurants have Canada's 100 Best recognition and remain tied, their highest historical placement is used.</p>
+  <p>If restaurants still cannot be separated objectively, they may share a ranking.</p>
+
+  <div class="disclaimer-box">
+    <p>This ranking does not attempt to determine which Ottawa restaurant serves the best food today.</p>
+    <p>It measures documented achievement over a defined twenty-year period. A younger restaurant naturally has had fewer opportunities to accumulate recognition than a restaurant operating throughout the study period.</p>
+    <p>Scores therefore represent historical achievement, not a prediction of current dining quality.</p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p class="footer-title">Ottawa Restaurant Awards</p>
+    <nav class="footer-nav">
+      <a href="../">Ranking</a> · <a href="./">Methodology</a> · <a href="../achievements/">Achievements</a>
+    </nav>
+    <p class="footer-disclaimer">An independent editorial project from OttawaBestRestaurants.com.</p>
+  </div>
+</footer>
+
+</body>
+</html>
