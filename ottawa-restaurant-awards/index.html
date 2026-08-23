@@ -143,6 +143,62 @@
   }
   .method-link:hover{ opacity:0.7; }
 
+  .celebration p{
+    font-size:16.5px;
+    line-height:1.75;
+    margin:0 0 20px;
+    color:var(--ink);
+  }
+
+  .quick-view{
+    margin:36px 0 48px;
+    border-top:1px solid var(--ink);
+    border-bottom:1px solid var(--ink);
+    padding:8px 0;
+  }
+  .qv-row{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:16px;
+    padding:13px 0;
+    border-bottom:1px dotted var(--line);
+    text-decoration:none;
+    color:var(--ink);
+  }
+  .qv-row:last-child{ border-bottom:none; }
+  .qv-left{
+    display:flex;
+    align-items:baseline;
+    gap:16px;
+    min-width:0;
+  }
+  .qv-rank{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:20px;
+    color:var(--accent);
+    flex-shrink:0;
+    width:26px;
+  }
+  .qv-name{
+    font-family:'Newsreader', serif;
+    font-weight:600;
+    font-size:17px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .qv-points{
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    color:var(--muted);
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+  .qv-row:hover .qv-name{ color:var(--accent); }
+
   .rule{
     border:none;
     border-top:1px solid var(--line);
@@ -152,6 +208,7 @@
   .entry{
     padding:48px 0;
     border-bottom:1px solid var(--line);
+    scroll-margin-top:24px;
   }
   .entry:last-of-type{ border-bottom:none; }
 
@@ -288,7 +345,7 @@
 
 <div class="masthead">
   <div class="masthead-inner">
-    <span class="masthead-title">Ottawa Restaurant Awards</span>
+    <span class="masthead-title">Ottawa's Most Decorated Restaurants</span>
     <nav class="mini-nav">
       <a href="./" class="active">Ranking</a>
       <a href="methodology/">Methodology</a>
@@ -310,10 +367,28 @@
     <p>Canada's 100 Best, the Canadian Culinary Championship, Gold Medal Plates and Great Kitchen Party, Air Canada enRoute, Maclean's, CAA/AAA, Opinionated About Dining, The Best Chef Awards and The World's 50 Best are among the organizations included in the study.</p>
   </div>
 
+  <div class="celebration">
+    <p>Whatever else divides Ottawa's dining scene, the record of recognition below is worth pausing on. Two decades of national rankings, competition podiums and international citations represent a genuine accumulation of craft — chefs who have spent years, in some cases their entire careers, building something worth noticing on a national stage. That so much of it belongs to a city more often associated with government than gastronomy makes it worth celebrating in its own right.</p>
+    <p>The list below is the quick version: ten restaurants, twenty years, ranked by points. The full detail — every award, every year, every source — follows further down the page.</p>
+  </div>
+
+  <div class="quick-view">
+    <a class="qv-row" href="#atelier"><span class="qv-left"><span class="qv-rank">01</span><span class="qv-name">Atelier</span></span><span class="qv-points">150 PTS</span></a>
+    <a class="qv-row" href="#beckta"><span class="qv-left"><span class="qv-rank">02</span><span class="qv-name">Beckta Dining &amp; Wine</span></span><span class="qv-points">63 PTS</span></a>
+    <a class="qv-row" href="#riviera"><span class="qv-left"><span class="qv-rank">03</span><span class="qv-name">Riviera</span></span><span class="qv-points">50 PTS</span></a>
+    <a class="qv-row" href="#arlo"><span class="qv-left"><span class="qv-rank">04</span><span class="qv-name">Arlo</span></span><span class="qv-points">40 PTS</span></a>
+    <a class="qv-row" href="#e18hteen"><span class="qv-left"><span class="qv-rank">05</span><span class="qv-name">Restaurant e18hteen</span></span><span class="qv-points">38 PTS</span></a>
+    <a class="qv-row" href="#antheia"><span class="qv-left"><span class="qv-rank">06</span><span class="qv-name">Antheia</span></span><span class="qv-points">33 PTS</span></a>
+    <a class="qv-row" href="#supplyanddemand"><span class="qv-left"><span class="qv-rank">07</span><span class="qv-name">Supply and Demand</span></span><span class="qv-points">29 PTS</span></a>
+    <a class="qv-row" href="#stofa"><span class="qv-left"><span class="qv-rank">08</span><span class="qv-name">Stofa</span></span><span class="qv-points">21 PTS</span></a>
+    <a class="qv-row" href="#northandnavy"><span class="qv-left"><span class="qv-rank">09</span><span class="qv-name">North &amp; Navy</span></span><span class="qv-points">18 PTS</span></a>
+    <a class="qv-row" href="#coconutlagoon"><span class="qv-left"><span class="qv-rank">10</span><span class="qv-name">Coconut Lagoon</span></span><span class="qv-points">15 PTS</span></a>
+  </div>
+
   <a class="method-link" href="methodology/">How the Ranking Works →</a>
 
   <!-- 1. ATELIER -->
-  <div class="entry">
+  <div class="entry" id="atelier">
     <div class="entry-top">
       <div class="entry-rank">01</div>
       <div class="entry-name-wrap">
@@ -371,7 +446,7 @@
   </div>
 
   <!-- 2. BECKTA -->
-  <div class="entry">
+  <div class="entry" id="beckta">
     <div class="entry-top">
       <div class="entry-rank">02</div>
       <div class="entry-name-wrap">
@@ -412,7 +487,7 @@
   </div>
 
   <!-- 3. RIVIERA -->
-  <div class="entry">
+  <div class="entry" id="riviera">
     <div class="entry-top">
       <div class="entry-rank">03</div>
       <div class="entry-name-wrap">
@@ -446,7 +521,7 @@
   </div>
 
   <!-- 4. ARLO -->
-  <div class="entry">
+  <div class="entry" id="arlo">
     <div class="entry-top">
       <div class="entry-rank">04</div>
       <div class="entry-name-wrap">
@@ -488,7 +563,7 @@
   </div>
 
   <!-- 5. E18HTEEN -->
-  <div class="entry">
+  <div class="entry" id="e18hteen">
     <div class="entry-top">
       <div class="entry-rank">05</div>
       <div class="entry-name-wrap">
@@ -523,7 +598,7 @@
   </div>
 
   <!-- 6. ANTHEIA -->
-  <div class="entry">
+  <div class="entry" id="antheia">
     <div class="entry-top">
       <div class="entry-rank">06</div>
       <div class="entry-name-wrap">
@@ -564,7 +639,7 @@
   </div>
 
   <!-- 7. SUPPLY AND DEMAND -->
-  <div class="entry">
+  <div class="entry" id="supplyanddemand">
     <div class="entry-top">
       <div class="entry-rank">07</div>
       <div class="entry-name-wrap">
@@ -602,7 +677,7 @@
   </div>
 
   <!-- 8. STOFA -->
-  <div class="entry">
+  <div class="entry" id="stofa">
     <div class="entry-top">
       <div class="entry-rank">08</div>
       <div class="entry-name-wrap">
@@ -639,7 +714,7 @@
   </div>
 
   <!-- 9. NORTH & NAVY -->
-  <div class="entry">
+  <div class="entry" id="northandnavy">
     <div class="entry-top">
       <div class="entry-rank">09</div>
       <div class="entry-name-wrap">
@@ -671,7 +746,7 @@
   </div>
 
   <!-- 10. COCONUT LAGOON -->
-  <div class="entry">
+  <div class="entry" id="coconutlagoon">
     <div class="entry-top">
       <div class="entry-rank">10</div>
       <div class="entry-name-wrap">
@@ -706,7 +781,7 @@
 
 <footer>
   <div class="footer-inner">
-    <p class="footer-title">Ottawa Restaurant Awards</p>
+    <p class="footer-title">Ottawa's Most Decorated Restaurants</p>
     <nav class="footer-nav">
       <a href="./">Ranking</a> · <a href="methodology/">Methodology</a> · <a href="achievements/">Achievements</a>
     </nav>
@@ -716,3 +791,4 @@
 
 </body>
 </html>
+
