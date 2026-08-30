@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advertise | Ottawa Best Restaurants</title>
+<meta name="description" content="Advertise on Ottawa's Best Restaurants — a limited number of banner placements for restaurants and hospitality brands.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.ottawabestrestaurants.com/advertise.html">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&display=swap');
+
+  :root{
+    --paper:#FAF6EF;
+    --ink:#17140F;
+    --accent:#FF4B2E;
+    --accent-soft:#FFE4DB;
+    --line: rgba(23,20,15,0.12);
+    --mustard:#F5A623;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Archivo', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+  }
+
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--paper);
+    border-bottom:3px solid var(--ink);
+  }
+  .header-inner{
+    max-width:1100px; margin:0 auto;
+    padding:18px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{
+    font-family:'Archivo Black', sans-serif;
+    font-size:20px;
+    letter-spacing:-0.02em;
+    text-decoration:none;
+    color:var(--ink);
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo span{
+    background:var(--accent);
+    color:var(--paper);
+    padding:4px 10px;
+    border-radius:6px;
+    font-size:15px;
+  }
+  nav a{
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+    margin-left:24px;
+    opacity:0.6;
+  }
+  nav a:hover{opacity:1;}
+  @media(max-width:560px){ nav{display:none;} }
+
+  main{
+    flex:1;
+    max-width:560px; margin:0 auto;
+    padding:72px 24px 100px;
+    text-align:center;
+  }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--ink); color:var(--paper);
+    font-weight:700; font-size:13px;
+    padding:6px 14px; border-radius:100px;
+    margin-bottom:24px;
+  }
+  .eyebrow::before{content:"●"; color:var(--accent); font-size:10px;}
+
+  h1{
+    font-family:'Archivo Black', sans-serif;
+    font-size:clamp(32px, 5.5vw, 48px);
+    line-height:1.05;
+    letter-spacing:-0.02em;
+    margin:0 0 20px;
+  }
+  h1 em{ font-style:normal; color:var(--accent); }
+
+  main > p{
+    font-size:16px;
+    line-height:1.6;
+    opacity:0.75;
+    margin:0 0 18px;
+  }
+
+  .form-card{
+    background:#fff;
+    border:2px solid var(--ink);
+    border-radius:20px;
+    padding:36px 28px;
+    margin-top:40px;
+    text-align:left;
+  }
+
+  .form-label{
+    display:block;
+    font-family:'Archivo Black', sans-serif;
+    font-size:18px;
+    letter-spacing:-0.01em;
+    margin-bottom:16px;
+  }
+
+  #ad-form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  #ad-email{
+    width:100%;
+    background:var(--paper);
+    border:2px solid var(--ink);
+    color:var(--ink);
+    font-family:'Archivo', sans-serif;
+    font-size:15px;
+    font-weight:500;
+    padding:14px 16px;
+    border-radius:10px;
+    outline:none;
+  }
+  #ad-email::placeholder{ color:#999; }
+  #ad-email.invalid{ border-color:#c0413a; }
+
+  .field-error{
+    font-size:12px;
+    color:#c0413a;
+    font-weight:600;
+    min-height:14px;
+    margin-top:-4px;
+  }
+
+  #ad-submit{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    background:var(--accent);
+    color:var(--paper);
+    font-weight:800;
+    font-size:14px;
+    padding:14px 22px;
+    border:none;
+    border-radius:100px;
+    cursor:pointer;
+    transition:background 0.15s ease, transform 0.15s ease;
+  }
+  #ad-submit:hover{ background:var(--ink); transform:translateY(-2px); }
+  #ad-submit:disabled{ opacity:0.6; cursor:default; transform:none; }
+
+  .form-note{
+    font-size:12px;
+    color:#777;
+    margin-top:14px;
+  }
+
+  #ad-success{ display:none; text-align:center; }
+  #ad-success p:first-child{
+    font-family:'Archivo Black', sans-serif;
+    font-size:22px;
+    margin-bottom:8px;
+  }
+  #ad-success p:last-child{
+    font-size:14px;
+    opacity:0.7;
+  }
+
+  footer{
+    border-top:3px solid var(--ink);
+    padding:32px 24px;
+    text-align:center;
+    font-size:13px;
+  }
+  .footer-text{ opacity:0.6; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">Ottawa<span>Best Restaurants</span></a>
+    <nav>
+      <a href="fine-dining.html">Fine Dining</a>
+      <a href="brunch.html">Brunch</a>
+      <a href="patios.html">Patios</a>
+      <a href="index.html">More ▾</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <span class="eyebrow">Advertise</span>
+  <h1>Advertise on <em>Ottawa's Best</em> Restaurants</h1>
+  <p>Ottawa Best Restaurants reaches readers deciding where to eat right now — browsing category guides for fine dining, pizza, brunch, and more, all across the city.</p>
+  <p>We offer a limited number of banner placements for restaurants and hospitality brands who want to reach that audience directly.</p>
+
+  <div class="form-card">
+    <div id="ad-form-wrap">
+      <label class="form-label" for="ad-email">Want to advertise here?</label>
+      <form id="ad-form" novalidate>
+        <input
+          type="email"
+          id="ad-email"
+          name="email"
+          placeholder="Email address"
+          autocomplete="email"
+          required
+        />
+        <div class="field-error" id="ad-error"></div>
+        <button type="submit" id="ad-submit">Get advertising info</button>
+      </form>
+      <p class="form-note">We'll follow up with current availability, placements, and rates.</p>
+    </div>
+
+    <div id="ad-success">
+      <p>Thank you.</p>
+      <p>Advertising information is on its way.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p class="footer-text">Ottawa Best Restaurants — Ottawa's dining scene, ranked by category.</p>
+</footer>
+
+<script>
+  (function () {
+    // Reuses the same Formspree endpoint as ottawafinedining.com/advertise.html,
+    // since both properties send advertising inquiries to the same inbox.
+    var FORM_ENDPOINT = "https://formspree.io/f/xyegrbyy";
+
+    var form = document.getElementById('ad-form');
+    var emailInput = document.getElementById('ad-email');
+    var errorEl = document.getElementById('ad-error');
+    var submitBtn = document.getElementById('ad-submit');
+    var formWrap = document.getElementById('ad-form-wrap');
+    var successEl = document.getElementById('ad-success');
+
+    function isValidEmail(value) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var value = emailInput.value.trim();
+
+      if (!isValidEmail(value)) {
+        emailInput.classList.add('invalid');
+        errorEl.textContent = 'Please enter a valid email address.';
+        return;
+      }
+
+      emailInput.classList.remove('invalid');
+      errorEl.textContent = '';
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: value,
+          _subject: "New advertising inquiry — Ottawa Best Restaurants"
+        })
+      })
+        .then(function (res) {
+          if (res.ok) {
+            formWrap.style.display = 'none';
+            successEl.style.display = 'block';
+          } else {
+            errorEl.textContent = 'Something went wrong. Please try again.';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Get advertising info';
+          }
+        })
+        .catch(function () {
+          errorEl.textContent = 'Something went wrong. Please try again.';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Get advertising info';
+        });
+    });
+
+    emailInput.addEventListener('input', function () {
+      emailInput.classList.remove('invalid');
+      errorEl.textContent = '';
+    });
+  })();
+</script>
+
+</body>
+</html>
